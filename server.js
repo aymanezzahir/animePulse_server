@@ -26,3 +26,6 @@ app.listen(PORT, function () {
   connectDB();
   console.log("http://localhost:" + PORT);
 });
+
+
+module.exports = app;
