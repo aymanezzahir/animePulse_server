@@ -1,3 +1,4 @@
+require("dotenv").config()
 const express = require("express");
 const app = express();
 const cors = require("cors");
@@ -5,7 +6,6 @@ const connectDB = require("./mongodb/connect");
 const AuthMidlleware = require("./midllewareAuth")
 const register = require("./routes/user/user")
 
-require("dotenv").config();
 app.use(express.json());
 app.use(cors());
 
